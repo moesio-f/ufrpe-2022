@@ -1,0 +1,7 @@
+# Arquivos
+*.pdf
+
+# Python
+venv/
+__pycache__/
+env/
