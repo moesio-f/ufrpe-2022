@@ -1,2 +1,2 @@
 #!/usr/bin/sh
-ps -A
+ps -A -o user,pid,%cpu,%mem,cmd
