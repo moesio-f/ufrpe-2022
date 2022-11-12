@@ -13,10 +13,10 @@ static char entrada[N] = "S(S(S(KS)(S(KK)(SKK)))(K(S(SKK)(SKK))))(S(S(KS)(S(KK)(
 //static char entrada[N] = "S(K(K))(KS)(SK)KK(SK)K\0";
 static char saida[N];
 
-//Procedimento que recebe duas variáveis, uma que aponta para
-//um array e outra que aponta para um inteiro com a posição do
+//Procedimento que recebe duas variÃ¡veis, uma que aponta para
+//um array e outra que aponta para um inteiro com a posiÃ§Ã£o do
 //array a ser usada. O procedimento termina quando atinge a
-//primeira posição depois dos parênteses.
+//primeira posiÃ§Ã£o depois dos parentÃªses.
 void casa_parenteses(char* array1, int* p) {
     int paren = 1;
     int c = *p;
@@ -37,10 +37,10 @@ void casa_parenteses(char* array1, int* p) {
     *p = c;
 }
 
-//Procedimento que recebe duas variáveis, uma que aponta para
-//um array e outra que aponta para um inteiro com a posição do
+//Procedimento que recebe duas variÃ¡veis, uma que aponta para
+//um array e outra que aponta para um inteiro com a posiÃ§Ã£o do
 //array a ser usada. O procedimento termina quando atinge a
-//primeira posição depois do argumento.
+//primeira posiÃ§Ã£o depois do argumento.
 void acha_argumento(char* array1, int* p) {
     int c = *p;
     if (array1[c] == '(') {
@@ -52,7 +52,7 @@ void acha_argumento(char* array1, int* p) {
     *p = c;
 }
 
-//Procedimento que recebe duas variáveis que apontam para
+//Procedimento que recebe duas variÃ¡veis que apontam para
 //dois arrays e executa a regra do combinador K: K a b => a,
 //copiando os argumentos do array1 para o array2.
 void reduzK(char* array1, char* array2) {
@@ -81,7 +81,7 @@ void reduzK(char* array1, char* array2) {
     array2[k] = '\0';
 }
 
-//Procedimento que recebe duas variáveis que apontam para
+//Procedimento que recebe duas variÃ¡veis que apontam para
 //dois arrays e executa a regra do combinador S: S a b c => a c ( b c ),
 //copiando os argumentos do array1 para o array2.
 void reduzS(char* array1, char* array2) {
@@ -136,8 +136,8 @@ void reduzS(char* array1, char* array2) {
     array2[k] = '\0';
 }
 
-//Procedimento que recebe uma variável que aponta para
-//um array e remove os parênteses da primeira posição
+//Procedimento que recebe uma variÃ¡vel que aponta para
+//um array e remove os parentÃªses da primeira posiÃ§Ã£o
 //do array.
 void recebeParenteses(char* array1) {
     int c = 1;
