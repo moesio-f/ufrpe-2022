@@ -206,7 +206,7 @@ void reduz_S(int *array1, int *array2)
 // Procedimento que recebe duas variáveis que apontam para
 // dois arrays e executa a regra do combinador I: I a => a,
 // copiando os argumentos do array1 para o array2.
-void reduz_I(char *array1, char *array2)
+void reduz_I(int *array1, int *array2)
 {
     // I a => a
     int k = 0;
@@ -223,7 +223,7 @@ void reduz_I(char *array1, char *array2)
 // Procedimento que recebe duas variáveis que apontam para
 // dois arrays e executa a regra do combinador B: B a b c => a (b c),
 // copiando os argumentos do array1 para o array2.
-void reduz_B(char *array1, char *array2)
+void reduz_B(int *array1, int *array2)
 {
     int A, nA;
     int B_, nB;
@@ -287,7 +287,7 @@ void reduz_B(char *array1, char *array2)
 // Procedimento que recebe duas variáveis que apontam para
 // dois arrays e executa a regra do combinador C: C a b c => a c b,
 // copiando os argumentos do array1 para o array2.
-void reduzC(char *array1, char *array2)
+void reduzC(int *array1, int *array2)
 {
     int A, nA;
     int B_, nB;
