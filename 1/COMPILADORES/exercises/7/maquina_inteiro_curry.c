@@ -386,6 +386,6 @@ int main()
     }
     printar_array(array1);
     float clks = CLOCKS_PER_SEC;
-    printf("\nTempo = %lf", (clock() / clks));
+    printf("\nTempo = %lf", (double) (clock() / clks));
     return 0;
 }
