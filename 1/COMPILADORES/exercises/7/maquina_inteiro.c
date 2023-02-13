@@ -34,6 +34,15 @@ void printar_array(unsigned int *array1)
         case K:
             printf("K");
             break;
+        case I:
+            printf("I");
+            break;
+        case B:
+            printf("B");
+            break;
+        case C:
+            printf("C");
+            break;
         case FP:
             printf(")");
             break;
@@ -120,10 +129,10 @@ void acha_argumento(int *array1, int *p)
 
 void reduz_K(int *array1, int *array2)
 {
-    int A, nA;
+    int iA, nA;
     int n = 1;
 
-    A = n;
+    iA = n;
     acha_argumento(array1, &n);
 
     nA = n - 1;
@@ -132,7 +141,7 @@ void reduz_K(int *array1, int *array2)
     int k = 0;
     int i;
 
-    for (i = A; i <= nA; i++)
+    for (i = iA; i <= nA; i++)
     {
         array2[k] = array1[i];
         k++;
@@ -152,29 +161,29 @@ void reduz_K(int *array1, int *array2)
  */
 void reduz_S(int *array1, int *array2)
 {
-    int A, nA;
-    int B_, nB;
-    int C_, nC;
+    int iA, nA;
+    int iB, nB;
+    int iC, nC;
     int n = 1;
-    A = n;
+    iA = n;
     acha_argumento(array1, &n);
     nA = n - 1;
-    B_ = n;
+    iB = n;
     acha_argumento(array1, &n);
     nB = n - 1;
-    C_ = n;
+    iC = n;
     acha_argumento(array1, &n);
     nC = n - 1;
 
     int k = 0;
     int i;
 
-    for (i = A; i <= nA; i++)
+    for (i = iA; i <= nA; i++)
     {
         array2[k] = array1[i];
         k++;
     }
-    for (i = C; i <= nC; i++)
+    for (i = iC; i <= nC; i++)
     {
         array2[k] = array1[i];
         k++;
@@ -183,12 +192,12 @@ void reduz_S(int *array1, int *array2)
     array2[k] = AP;
     k++;
 
-    for (i = B_; i <= nB; i++)
+    for (i = iB; i <= nB; i++)
     {
         array2[k] = array1[i];
         k++;
     }
-    for (i = C_; i <= nC; i++)
+    for (i = iC; i <= nC; i++)
     {
         array2[k] = array1[i];
         k++;
@@ -225,18 +234,18 @@ void reduz_I(int *array1, int *array2)
 // copiando os argumentos do array1 para o array2.
 void reduz_B(int *array1, int *array2)
 {
-    int A, nA;
-    int B_, nB;
-    int C_, nC;
+    int iA, nA;
+    int iB, nB;
+    int iC, nC;
     int n = 1;
 
-    A = n;
+    iA = n;
     acha_argumento(array1, &n);
     nA = n - 1;
-    B_ = n;
+    iB = n;
     acha_argumento(array1, &n);
     nB = n - 1;
-    C_ = n;
+    iC = n;
     acha_argumento(array1, &n);
     nC = n - 1;
 
@@ -245,7 +254,7 @@ void reduz_B(int *array1, int *array2)
     int i;
 
     // Copiar o "a" para a array2
-    for (i = A; i <= nA; i++)
+    for (i = iA; i <= nA; i++)
     {
         array2[k] = array1[i];
         k++;
@@ -256,14 +265,14 @@ void reduz_B(int *array1, int *array2)
     k++;
 
     // Copiar o "b" para a array2
-    for (i = B_; i <= nB; i++)
+    for (i = iB; i <= nB; i++)
     {
         array2[k] = array1[i];
         k++;
     }
 
     // Copiar o "c" para a array2
-    for (i = C_; i <= nC; i++)
+    for (i = iC; i <= nC; i++)
     {
         array2[k] = array1[i];
         k++;
@@ -289,18 +298,18 @@ void reduz_B(int *array1, int *array2)
 // copiando os argumentos do array1 para o array2.
 void reduz_C(int *array1, int *array2)
 {
-    int A, nA;
-    int B_, nB;
-    int C_, nC;
+    int iA, nA;
+    int iB, nB;
+    int iC, nC;
     int n = 1;
 
-    A = n;
+    iA = n;
     acha_argumento(array1, &n);
     nA = n - 1;
-    B_ = n;
+    iB = n;
     acha_argumento(array1, &n);
     nB = n - 1;
-    C_ = n;
+    iC = n;
     acha_argumento(array1, &n);
     nC = n - 1;
 
@@ -309,21 +318,21 @@ void reduz_C(int *array1, int *array2)
     int i;
 
     // Copiar o "a" para a array2
-    for (i = A; i <= nA; i++)
+    for (i = iA; i <= nA; i++)
     {
         array2[k] = array1[i];
         k++;
     }
 
     // Copiar o "c" para a array2
-    for (i = C_; i <= nC; i++)
+    for (i = iC; i <= nC; i++)
     {
         array2[k] = array1[i];
         k++;
     }
 
     // Copiar o "b" para a array2
-    for (i = B_; i <= nB; i++)
+    for (i = iB; i <= nB; i++)
     {
         array2[k] = array1[i];
         k++;
