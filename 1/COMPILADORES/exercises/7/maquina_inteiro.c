@@ -1,4 +1,5 @@
 ﻿#include <stdio.h>
+#include <stdlib.h>
 #include <time.h>
 
 #define N 100000000
@@ -385,7 +386,6 @@ int main()
         array2 = array3;
     }
     printar_array(array1);
-    float clks = CLOCKS_PER_SEC;
-    printf("\nTempo = %lf", (double) (clock() / clks));
+    printf("\nTempo = %lf\n", (double) (clock() / CLOCKS_PER_SEC));
     return 0;
 }
