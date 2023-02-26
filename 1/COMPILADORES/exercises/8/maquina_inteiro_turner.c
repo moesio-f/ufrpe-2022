@@ -658,29 +658,29 @@ int main()
             remove_parenteses(array1);
             array2[0] = fim_string;
             break;
+        case I:
+            reduz_I(array1, array2);
+            break;
+        case D:
+            reduz_D(array1, array2);
+            break;
+        case F:
+            reduz_F(array1, array2);
+            break;
+        case B:
+            reduz_B(array1, array2);
+            break;
         case K:
             reduz_K(array1, array2);
             break;
         case S:
             reduz_S(array1, array2);
             break;
-        case I:
-            reduz_I(array1, array2);
-            break;
-        case B:
-            reduz_B(array1, array2);
-            break;
         case C:
             reduz_C(array1, array2);
             break;
-        case D:
-            reduz_D(array1, array2);
-            break;
         case E:
             reduz_E(array1, array2);
-            break;
-        case F:
-            reduz_F(array1, array2);
             break;
         case Y:
             reduz_Y(array1, array2);
